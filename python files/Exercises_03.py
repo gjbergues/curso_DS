@@ -1,16 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ___
-# 
-# <a href='http://www.pieriandata.com'> <img src='../../Pierian_Data_Logo.png' /></a>
-# ___
-
 # # SF Salaries Exercise 
 # 
 # Welcome to a quick exercise for you to practice your pandas skills! We will be using the [SF Salaries Dataset](https://www.kaggle.com/kaggle/sf-salaries) from Kaggle! Just follow along and complete the tasks outlined in bold below. The tasks will get harder and harder as you go along.
 
-# ** Import pandas as pd.**
+# **Import pandas as pd.**
 
 # In[1]:
 
@@ -18,7 +13,7 @@
 import pandas as pd
 
 
-# ** Read Salaries.csv as a dataframe called sal.**
+# **Read Salaries.csv as a dataframe called sal.**
 
 # In[3]:
 
@@ -26,7 +21,7 @@ import pandas as pd
 sal = pd.read_csv("Salaries.csv")
 
 
-# ** Check the head of the DataFrame. **
+# **Check the head of the DataFrame.**
 
 # In[4]:
 
@@ -34,7 +29,7 @@ sal = pd.read_csv("Salaries.csv")
 sal.head()
 
 
-# ** Use the .info() method to find out how many entries there are.**
+# **Use the .info() method to find out how many entries there are.**
 
 # In[5]:
 
@@ -159,7 +154,5 @@ sal['title_len'] = sal['JobTitle'].apply(len)
 
 sal[['title_len','TotalPayBenefits']].corr() # No correlation.
 
-
-# ** Bonus: Is there a correlation between length of the Job Title string and Salary? **
 
 # # Great Job!
